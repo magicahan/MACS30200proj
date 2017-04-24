@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}%
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{fancyhdr,lastpage}
+\usepackage{cite}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+
+%\renewcommand\headrulewidth{2pt}
+%\renewcommand\footrulewidth{2pt}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage[bottom]{footmisc}
+\usepackage{pdflscape}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+%\usepackage{enumitem}
+\usepackage[pdftex]{graphicx}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+\newcommand{\q}[1]{``#1''}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{graphicx}
+\graphicspath{ {/Users/luxihan/Documents/Winter2017/Econ23300/Paper/images/} }
+
+\usepackage{enumerate}
+%\usepackage[shortlabels]{enumerate}
+\setlength{\parindent}{24pt}
+%\renewcommand{\baselinestretch}{2.0}
+\usepackage{lipsum} % just for the example
+\makeatletter
+\newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
+\makeatother
+%\usepackage{enumitem}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\verbatimfont{\small}%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[nohead]{geometry}
+
+\usepackage{indentfirst}
+\usepackage{endnotes}
+\usepackage{graphicx}%
+\usepackage{rotating}
+\usepackage[driverfallback=dvipdfm]{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\setcounter{MaxMatrixCols}{30}
+\makeatletter
+\def\@biblabel#1{\hspace*{-\labelsep}}
+\makeatother
+\geometry{left=1in,right=1in,top=1.00in,bottom=1.0in}
+
+\title{Hetergeneity in Human Cpital Accumulation in Urban and Rural China: Persepectives from Intergenerational Human Capital Transfer and Financial Constraint}
+\author{Luxi Han 10449918}
+\date{April 23rd, 2017}
+\begin{document}
+\maketitle
+
+\section{Literature and Background}
+Social mobility has been stagnating in the past decade in China (Fan et al., 2014). Understanding what are the underlying factors that are driving the increasing inequality has been the focus of academic researches and policy enactment. 
+
+After the start of the openning up policy, income inequality has been increasing significantly. Kahn and Riskin (1998) uses a household survey data from Chinese Acadey of Social Sciences to study the urban rural income divergence from 1988 and 1995. During this period, income inequality increased with a GINI coefficient over 0.45. Wage differentials and net subsidies are two major income inequlaity sources. Furthermore, Meng and Kidd(1997) studied the labor market reform, during which the wage determination structure underwent significant change through the introduction of market mechnism. They argue that the new system has in a certain degree free up firms' hiring aned dismissal decisions. The role of human capital was increasingly important though seniority was still the single most important determinat of wage. After 2000, as the degree of marketization increases, returns to medium and high skill labor have gradually converged to their actual marginal product(Heckman and Yi, 2012).
+
+Multiple researches have also confirmed this relationship between human capital and income differences in China(Zhang et al., 2007; Gao et al., 2008; Guo, 2017). Specifically, Fan, et al. (2014) study the intergenerational income and education mobility.  They have found there is a decline in China’s social mobility. Their analysis shows that although the increasing returns to human capital create incentive in the investment in human capital, increase in educational costs, increasing inequality and education policy distortion have exacerbated the problem of education inequality. Thereafter, it’s crucial to understand the underlying human capital accumulation in China.\par
+
+There has been a wealth of researches devoted to the study of human capital accumulation process in China. But in general the results are not of good quality and there is an existence of extensive endogeneity problem in their econometric specification due to the lack of comprehensive household survey data  and structural model to understand the underlying household decisions in the investment of human capital. Towards that aspect, Qin et al. (2014) built an overlapping generations model to study the impact of intergenerational human capital transfer on income mobility in China. They identify a structural model to understand the human capital accumulation process and adjust for potential endogeniety problem. Their results show that the income mobility is underestimated if excluding the direct transfer of human capital. But they still omit some important aspects of the human capital accumulation process, for example, parents’ investment in their offspring’s human capital. Attanasio (2015) developed a more comprehensive human capital accumulation model. In this model, human capital is determined by 1) genetic and non-genetic intergenerational human capital transfer; 2) investment of resources and time in human capital accumulation; 3) environment variables including school, peer interaction and education policies. \par
+
+\section{Heterogeneity in Human Capital Accumulation}
+A salient drawback of current researches on human capital accumulation has been that most of them have paid little attention to the heterogeneity in different regions of China. Urbanization rate now is around 52.6 percent in China, which means there are still more than half billion people living in rural China(Lu and Wan, 2014). Among all the people living in China, there are over 20 million people who still don't have urban identity due to the demanding requirement of the household registration system, which is also called \textit{Hukou}. Urban residents and non-urban rural urban migrants have access to very different social welfare system, which involves children's different access to schooling. These evidences show that there exists large heterogeneity in the current demographic of China and a simple representative agent model will not suffice to paint the whole picture.\par
+
+\subsection{Intergenrational Human Capital Transfer}
+ In general, the education accumulation process is determined by three factors: genetic factor(Plug, 2004), parental behaviors(Bjorklund et al., 2004) and environmental factors (Bauer and Riphahn, 2007).\par
+ 
+Intergenerational human capital transfer is one of the most important factors affecting human capital accumulation process. Qin, et al.(2014) has demonstrated that there have been strong evidence showing that human capital can be directly transferred from parents to their offsprings. Existing literatures have paid increasing attention to the heterogeneity in human capital determination process for different cohort of people. Cobb-Clark and Nguyen(2010) studied different intergenerational education mobility for Australian born residents and immigrants. They have shown that non-English speaking background immigrants(NESB) have more education advantages than their English speaking background. And NESB have significantly higher ingtergenerational education mobility for those have high education parents. There are also other studies that have been focusing on the differential intergenerational human capital transfer among immigrants(Bauer and Riphahn, 2007; Jensen and Rasmussen, 2011). But there are relatively few researches on the heterogeneity of human capital transfer in China. Among the scarce of literatures, Zhou and Xu(2017)  focus on the effect of different environment on the intergenerational transmission of education between rural-urban migrants and urban residents. Specifically, they argue that the 	\textit{hukou} system hampered the investment of education investment of urban-rural migrants and hence reducing their intergenerational education mobility. Firstly, because of the lack of welfare support of rural elderly, rural-urban households have to make more transfer to their parents, which reduces the investment of children's education. Secondly, barriers of labor market caused by the \textit{hukou} system creates a wedge in rural-urban migrants' labor income hence reducing future returns of education. Though they control for multiple environment factors, the study consistently shows a significant role of intergenerational transmission of education on children's human capital accumulation process. But due to the lack of information on time allocation and education attainment, their study is constrained in their dependent variable selection and focus only on effects of environment factors.\par
+
+\subsection{Financial Constraints} 
+Among all the determinants, parental behaviour is also very important. Parents are the major agents of making human capital investment decisions. In general, the education investment decision is a cost benefit analysis.  For rural households, financial constraint is one of the most important constraints on human capital accumulation. On the benefit side, parents don't have reliable information on the returns of further education (Jensen, 2010), this is especially true for the urban rural system segregated by the \textit{hukou} system. Thus, there is uncertain returns to investment in children's education for rural households. Also the competitive high school entrance exam has prohibited rural students from entering better high school and this further discourages their parents make further education investment (Liu et al. 2012).  But the more important reason that hinders rural households from investing in their children's education is financial constraint(Yi, et al. 2012).  It is estimated that the cost of sending a child to high school is about 10 to 15 times of the annual per capita income in rural China(Gansu Daily, 2007). Liu et al.(2009) have conducted a more accurate estimation of this cost.  It is estimated that the direct cost(tuition and out of pocket cost) is around 1659 dollars for three year high school education. The oppourtunity cost of additional three years of education is about 5055 dollars. In total, the cost of high school education for a common rural household is nearly 70 times per capita income for someone who was at the poverty line. 
+
+Genetic factor is hard to measure. Plug (2004) uses adoptee data from the Wisconsin Longitudinal Suvery to separate effects of genetic factors on children's education. They have found out that the father child correlation in education is significantly positive. But for our potential dataset, we lack of the exogeneity of genetic and other relevant factors, such as demograpic information like income.  
+
+\section{Contribution}
+In general, there have been considerable constraints in existing literature on human capital accumulation process of China. Firstly, these structural models tend to ignore heterogeneity among households. Qin et al. (2014) used a representative household model and assume equal discount rate and altruistic parameter, which is why they ignore household investment in education. In this paper, we are trying to build a model with heterogeneous hosehold and we are also trying to adopt this model to specify it in an empirial micro-econometric model. Secondly, regional differences, specifically the rural urban divergence, have been ignored by most of these studies. Heckman (2005) shows that urban and rural residents faced a highly different labor market. Moreover, Fan et al. (2014) shows that income and education mobility is much lower in economic disadvantaged area. Yet most of the studies have ignored this difference or focus soely on one area without considering the difference between these two areas. Lastly, current studies have predominantly been focusing on the quantity of human capital. However, China has highly unequal allocation of education resources  and there is a significant difference in cross-regional human capital quality (Heckman, 2005). It will create large measurement error if one were to consider a person of 12 years of education in Beijing is the same as the other person from a small town in Gansu. This paper is going to utilize a more comprehensive dataset - China Family Panel Studies, which contain information on relative rank of the schools the interviewees attended, to address this issue. Furthermore, the cognitive test conducted in this survey can in a certain degree separate genetic reason from other socioeconomic features to avoid endogeneity issue. \par
+
+\newpage
+\begin{thebibliography}{1}
+\bibitem{Attanasio}
+Attanasio, Orazio P. "The determinants of human capital formation during the early years of life: Theory, measurement, and policies." Journal of the European Economic Association 13, no. 6 (2015): 949-997.
+
+\bibitem{bauer}
+Bauer, Philipp, and Regina T. Riphahn. "Heterogeneity in the intergenerational transmission of educational attainment: evidence from Switzerland on natives and second-generation immigrants." Journal of Population Economics 20, no. 1 (2007): 121-148.
+
+\bibitem{bj}
+Bjorklund, Anders, Mikael Lindahl, and Erik Plug. "Intergenerational effects in Sweden: What can we learn from adoption data?." (2004).
+
+\bibitem{cobb}
+Cobb-Clark, Deborah A., and Ha Trong Nguyen. "Immigration background and the intergenerational correlation in education." (2010).
+
+\bibitem{fan}
+Fan, Yi, Junjian Yi, and Junsen Zhang. "The Great Gatsby Curve in China: Cross-Sectional Inequality and Intergenerational Mobility." (2015).
+
+\bibitem{heckman2}
+Heckman, James J. "China's human capital investment." China Economic Review 16, no. 1 (2005): 50-70.
+
+\bibitem{heckman}
+Heckman, James J., and Junjian Yi. Human capital, economic growth, and inequality in China. No. w18100. National Bureau of Economic Research, 2012.
+
+\bibitem{jensen}
+Jensen, Robert. "The (perceived) returns to education and the demand for schooling." The Quarterly Journal of Economics 125, no. 2 (2010): 515-548.
+
+\bibitem{jensen2}
+Jensen, Peter, and Astrid Würtz Rasmussen. "The effect of immigrant concentration in schools on native and immigrant children's reading and math skills." Economics of Education Review 30, no. 6 (2011): 1503-1515.
+
+\bibitem{khan}
+Khan, Azizur Rahman, and Carl Riskin. "Income and inequality in China: composition, distribution and growth of household income, 1988 to 1995." The China Quarterly 154 (1998): 221-253.
+
+\bibitem{lu}
+Lu, Ming, and Guanghua Wan. "Urbanization and urban systems in the People's Republic of China: research findings and policy recommendations." Journal of Economic Surveys 28, no. 4 (2014): 671-685.
+
+\bibitem{Liu}
+Liu, Chengfang, Linxiu Zhang, Renfu Luo, Scott Rozelle, Brian Sharbono, and Yaojiang Shi. "Development challenges, tuition barriers, and high school education in China." Asia Pacific Journal of Education 29, no. 4 (2009): 503-520.
+
+\bibitem{liu}
+Liu, Chengfang, Hongmei Yi, Linxiu Zhang, Renfu Luo, Yaojiang Shi, James Chu, and Scott Rozelle. "The effect of early commitment of financial aid on matriculation to senior high school among poor junior high students in rural China." Rural Education Action Project Working Paper 254 (2012).
+
+\bibitem{meng}
+Meng, Xin, and Michael P. Kidd. "Labor market reform and the changing structure of wage determination in China's state sector during the 1980s." Journal of Comparative Economics 25, no. 3 (1997): 403-421.
+
+\bibitem{plub}
+Plug, Erik. "Estimating the effect of mother's schooling on children's schooling using a sample of adoptees." The American economic review 94, no. 1 (2004): 358-368.
+
+\bibitem{qin} 
+Qin, Xuezheng, Tianyu Wang, and Castiel Chen Zhuang. "Intergenerational transfer of human capital and its impact on income mobility: Evidence from China." China Economic Review 38 (2016): 306-321.
+
+\bibitem{wang2}
+Wang, Hou, Yi David Wang, and Jiaxiong Yao. "The Human Factor: China’s Internal Migration and the Saving Puzzle." (2015).
+
+\bibitem{wang}
+Wang, Hua-shu, and Henk Moll. "Education financing of rural households in China." Journal of family and economic issues 31, no. 3 (2010): 353-360.
+
+\bibitem{Yi}
+Yi, Hongmei, Yingquan Song, Chengfang Liu, Xiaoting Huang, Linxiu Zhang, Yunli Bai, Baoping Ren et al. "Giving kids a head start: The impact and mechanisms of early commitment of financial aid on poor students in rural China." Journal of Development Economics 113 (2015): 1-15.
+
+\bibitem{zhang}
+Zhang, L., Huang, J. and Rozelle, S., 2002. Employment, emerging labor markets, and the role of education in rural China. China Economic Review, 13(2), pp.313-328.
+
+\bibitem{zhiqiang}
+Zhiqiang, Liu. "Human capital externalities and rural–urban migration: Evidence from rural China." China Economic Review 19, no. 3 (2008): 521-535.
+
+\bibitem{zhou}
+Zhou, Dong, and Junling Xu. "Heterogeneity in the intergenerational transmission of education and second generation rural-urban migrants." International Review of Economics and Finance (2017).
+
+
+\end{thebibliography}
+
+\end{document}
