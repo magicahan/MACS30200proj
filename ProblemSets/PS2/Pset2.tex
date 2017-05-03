@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}%
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{fancyhdr,lastpage}
+\usepackage{cite}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize\textsl{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{listings}
+\lstset{frame=single,
+  language=Python,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+
+%\renewcommand\headrulewidth{2pt}
+%\renewcommand\footrulewidth{2pt}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage[bottom]{footmisc}
+\usepackage{pdflscape}
+\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{float,color}
+%\usepackage{enumitem}
+\usepackage[pdftex]{graphicx}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{derivation}{Derivation} % Number derivations on their own
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition} % Number propositions on their own
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\numberwithin{equation}{section}
+\bibliographystyle{aer}
+\newcommand\ve{\varepsilon}
+\newcommand\boldline{\arrayrulewidth{1pt}\hline}
+\newcommand{\q}[1]{``#1''}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\usepackage{graphicx}
+\graphicspath{ {/Users/luxihan/Documents/Winter2017/Econ23300/Paper/images/} }
+
+\usepackage{enumerate}
+%\usepackage[shortlabels]{enumerate}
+\setlength{\parindent}{24pt}
+%\renewcommand{\baselinestretch}{2.0}
+\usepackage{lipsum} % just for the example
+\makeatletter
+\newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
+\makeatother
+%\usepackage{enumitem}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\verbatimfont{\small}%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[nohead]{geometry}
+
+\usepackage{indentfirst}
+\usepackage{endnotes}
+\usepackage{graphicx}%
+\usepackage{rotating}
+\usepackage[driverfallback=dvipdfm]{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue}
+\setcounter{MaxMatrixCols}{30}
+\makeatletter
+\def\@biblabel#1{\hspace*{-\labelsep}}
+\makeatother
+\geometry{left=1in,right=1in,top=1.00in,bottom=1.0in}
+
+\title{Problem Set2: Refree Report}
+\author{Luxi Han 10449918}
+\date{April 23rd, 2017}
+\begin{document}
+\maketitle
+
+Article: \textit{Is the Internet Causing Political Polarization? Evidence from Demographics}
+
+The major research question of this paper is whether the growth in internet access contributes to increasing political polirization in the US. This paper reject the null hyposthesis that increasing internet access leads to rising political polirization. \par
+
+The paper uses the American National Election Studies 1948-2012 Time Series Cumulative, 2008 Time Series Study and 2012  Time Series Study data sets. Essentially, this paper is trying to identify the relationship between two variables namely, internet exposure and political polirization. \par
+
+This paper doesn't have a theoretical framework, instead it's predominantly a empirical work. This paper constructs nine existing measures of political polirization from the previous literature and integrate all of these measures into one overall measure. Specifically, they take a simple weighted average approach in the following form:
+\begin{align*}
+Index_t = \frac{1}{|M|}\Sigma_{m\in M}\frac{m_t}{m_1996}
+\end{align*}
+Each of the measure is scaled by their base level.\par
+
+The basic approach taken by this paper is through studying the political polirization across different groups. Fisrt of all, the authors demonstrats the general trend of political polirization across different age groups. In general the old cohort are is more politically polirized. The authors argue that since old aged people in general have significantly less internet access, more internet access doesn't lead to increasing political polirization. Furthermore, the authors divide the sample into two groups based on their usage of internet. Firstly, they divide the sample based on acutal survey questions on internet access and secondly they use the predicted internet access as the division criterion. Both of the methods give the same result showing that the internet users experience less growth in political polirization.\par
+
+But in general, this paper is still not in publishable form. There are several parts that should be modified.\par 
+
+First of all, based on the current methods, it's ambiguous whether the relationship between the difference in age cohorts and political polirization represetsthe true relationship bewteen internet access and political polirization. Across different years of surveys, the younger cohort may become the older cohort in the following survey. One of the critical evidences the author argue for their hypothesis is that the internet users experience less growth in political polirization. But this arguement depends on the hypothesis that the group of internet users doesn't change. But as internet technology advaced, the group of internet users are significantly increasing over years. The demographic group for 1996 interviewees is different from that in 2012. Then the argument will be flawed if the paper only considers the pure growth rate in political polirization without controlling for the change in demographic group. The authors can try to divide the group into different cohorts based on, for example age, and try to study the differnet trend in political polirization between internet and non internet users within the same demographic group. \par
+
+Secondly, the method used by this paper is not rigorous enough. The identification procedure can be severely biased by other confounders. For example, as demonstrated in the paper, older cohorts have lower internet access, and it may be that older people are in general more polirized than younger cohort. Particularly, by dividing the sample using the predicted internet access, this division is entirely dependent on demographic information. Sever endogeneity issue will happen. A more rigorous way to identify this problem is to use a regression type of technique to control for other confounders. One thing to keep in mind is that the most ideal approach is to study the trend of one's political polirization before and after their exposure to internet. How to approximate this approach as much as possible is crucial to this research. \par
+
+Thirdly, the paper should add more discussion of the different measures of political polirization. Though they did mention in the paper that they are not concerned with which measure is the best, differnet dimensions matter for political polirization differently. A simple weighted average is not representative enough. It's possible that the index is predominantly driven by only one measure but not the others. The authors should add in the appendix the general trend of political polirzation of the nine different measures separately.
+
+\end{document}
